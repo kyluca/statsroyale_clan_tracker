@@ -16,6 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from statsroyale_clan_tracker import views
+
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^time', views.current_datetime),
 ]
